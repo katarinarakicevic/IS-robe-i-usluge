@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{296D5467-0F8D-48E1-9C5B-3D48C6A6693F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication2</RootNamespace>
+    <AssemblyName>WindowsFormsApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Izbor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izbor.Designer.cs">
+      <DependentUpon>Izbor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Narudžbenica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Narudžbenica.Designer.cs">
+      <DependentUpon>Narudžbenica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NarudženicaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NarudženicaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="proizvodiDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>proizvodiDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Račun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Račun.Designer.cs">
+      <DependentUpon>Račun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Početna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Početna.Designer.cs">
+      <DependentUpon>Početna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prodavnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prodavnica.Designer.cs">
+      <DependentUpon>Prodavnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usluge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usluge.Designer.cs">
+      <DependentUpon>Usluge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="uslugeDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uslugeDataSet7.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Izbor.resx">
+      <DependentUpon>Izbor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Narudžbenica.resx">
+      <DependentUpon>Narudžbenica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Račun.resx">
+      <DependentUpon>Račun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Početna.resx">
+      <DependentUpon>Početna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prodavnica.resx">
+      <DependentUpon>Prodavnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Usluge.resx">
+      <DependentUpon>Usluge.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NarudženicaDataSet.xsc">
+      <DependentUpon>NarudženicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NarudženicaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NarudženicaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NarudženicaDataSet.xss">
+      <DependentUpon>NarudženicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet.xsc">
+      <DependentUpon>proizvodiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet.xss">
+      <DependentUpon>proizvodiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet1.xsc">
+      <DependentUpon>proizvodiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet1.xss">
+      <DependentUpon>proizvodiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet2.xsc">
+      <DependentUpon>proizvodiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet2.xss">
+      <DependentUpon>proizvodiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet3.xsc">
+      <DependentUpon>proizvodiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet3.xss">
+      <DependentUpon>proizvodiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet4.xsc">
+      <DependentUpon>proizvodiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet4.xss">
+      <DependentUpon>proizvodiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet5.xsc">
+      <DependentUpon>proizvodiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet5.xss">
+      <DependentUpon>proizvodiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet61.xsc">
+      <DependentUpon>proizvodiDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="proizvodiDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>proizvodiDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="proizvodiDataSet61.xss">
+      <DependentUpon>proizvodiDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="uslugeDataSet.xsc">
+      <DependentUpon>uslugeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet.xss">
+      <DependentUpon>uslugeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet1.xsc">
+      <DependentUpon>uslugeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet1.xss">
+      <DependentUpon>uslugeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet2.xsc">
+      <DependentUpon>uslugeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet2.xss">
+      <DependentUpon>uslugeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet3.xsc">
+      <DependentUpon>uslugeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet3.xss">
+      <DependentUpon>uslugeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet4.xsc">
+      <DependentUpon>uslugeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet4.xss">
+      <DependentUpon>uslugeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet5.xsc">
+      <DependentUpon>uslugeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet5.xss">
+      <DependentUpon>uslugeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet6.xsc">
+      <DependentUpon>uslugeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet6.xss">
+      <DependentUpon>uslugeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet7.xsc">
+      <DependentUpon>uslugeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="uslugeDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>uslugeDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="uslugeDataSet7.xss">
+      <DependentUpon>uslugeDataSet7.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer-Science.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WDF_2470119.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WDF_2470727.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_icon.png" />
+    <None Include="Resources\116990-matte-blue-and-white-square-icon-business-key7.png" />
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Narudženica.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="proizvodi.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="usluge.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
